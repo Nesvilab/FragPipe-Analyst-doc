@@ -13,8 +13,8 @@ There are two server instances
 This repository is intended to provide documentation and a user forum for questions, suggestions, and bug reports. For bug report, please make sure you provide enough details for reproducing the errors. If you feel safer sharing data via email, please email it to [yihsiao@umich.edu](yihsiao@umich.edu). 
 
 - [Latest Documentation/Tutorials](https://fragpipe-analyst-doc.nesvilab.org/)
-- [Questions/Suggestions](https://github.com/Nesvilab/FragPipe-Analyst/discussions)
-- [Bug Reports](https://github.com/Nesvilab/FragPipe-Analyst/issues)
+- [Questions/Suggestions](https://github.com/Nesvilab/FragPipe-Analyst-doc/discussions)
+- [Bug Reports](https://github.com/Nesvilab/FragPipe-Analyst-doc/issues)
 
 ## Source Code
 The source code of FragPipe-Analyst can be found [here](https://github.com/MonashProteomics/FragPipe-Analyst).

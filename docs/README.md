@@ -1,8 +1,8 @@
 # FragPipe-Analyst
 
-FragPipe-Analyst is an easy-to-use, interactive web application developed to perform various computational analyses and to visualize quantitative mass spectrometry-based proteomic datasets processed using [FragPipe](https://fragpipe.nesvilab.org/) computational pipeline. It is compatible with the LFQ-MBR, spectral counts, TMT, and DIA quantification workflows in FragPipe. 
+FragPipe-Analyst is an easy-to-use, interactive web application developed to perform various computational analyses and to visualize quantitative mass spectrometry-based proteomic datasets processed using [FragPipe](https://fragpipe.nesvilab.org/) computational pipeline. It is compatible with the LFQ-MBR, spectral counts, TMT, and DIA quantification workflows in FragPipe, and supports protein-level, peptide-level, and PTM site-level analyses.
 
-FragPipe-Analyst provides multiple useful analysis features, including differential expression (DE) analysis using [Limma](https://bioconductor.org/packages/release/bioc/html/limma.html), enrichment analysis (GO/Pathways) using [Enrichr](https://maayanlab.cloud/Enrichr/), and multiple options for missing value imputation. It provides rich data visualization capabilities, including PCA and volcano plot, sample correlation plots, heatmaps, plots for missing value and sample coverage inspection, protein abundance plots for selected protein(s), imputation effect evaluation, and more. The user can also export results in table format for further analysis, such as DE results (FC and p-values), imputed data matrix (protein abundances after performing selected imputation method), and GO/pathway enrichment results.
+FragPipe-Analyst provides multiple useful analysis features, including differential expression (DE) analysis using [Limma](https://bioconductor.org/packages/release/bioc/html/limma.html), enrichment analysis (GO/Pathways) using [Enrichr](https://maayanlab.cloud/Enrichr/), and multiple options for missing value imputation. It provides rich data visualization capabilities, including PCA and volcano plots, sample correlation plots, heatmaps, plots for missing value and sample coverage inspection, feature abundance plots for selected features, imputation effect evaluation, dual-comparison scatter plots, and absence/presence analysis with Venn, UpSet, and Jaccard similarity plots. The user can also export results in table format for further analysis, such as DE results (FC and p-values), imputed data matrix (feature abundances after performing selected imputation method), and GO/pathway enrichment results.
 
 ## Public Servers
 There are two server instances
@@ -16,12 +16,13 @@ There are two server instances
 ## Tutorial
 
 - [TMT](TMT-tutorial/README.md): A clear cell renal cell carcinoma TMT experiment example from [CPTAC study](https://doi.org/10.1016/j.cell.2019.10.007) published in Cell.
-- [LFQ](LFQ-AP-MS-tutorial/README.md): An LFQ AP-MS example of head and neck cancer from [Swantey et al.](https://doi.org/10.1126%2Fscience.abf2911) published in Sceince. 
+- [LFQ](LFQ-AP-MS-tutorial/README.md): An LFQ AP-MS example of head and neck cancer from [Swantey et al.](https://doi.org/10.1126%2Fscience.abf2911) published in Science.
 - [DIA](DIA-tutorial/README.md): A tutorial using subset of clear cell renal cell carcinoma data independent acquisition (DIA) experiment. It's the second part of a tutorial using collection of FragPipe softwares for DIA analysis. You can also find the first part [here](DIA-tutorial/DIA.md).
 - [LFQ Hands-On Tutorial](LFQ-tutorial): An hands-on tutorial of analyzing a gliomas data-dependent label-free quantification (LFQ) dataset. It's the second part of a tutorial using collection of FragPipe softwares for LFQ analysis. You can find the first part [here](LFQ-tutorial/LFQ.md).
 
 ## Documentation
-Detailed information of functionalities are provided for each module. Readers are recommendated to read [our manuscript published in Journal of Proteome](https://pubs.acs.org/doi/10.1021/acs.jproteome.4c00294) first for the overview.
+Detailed information of functionalities are provided for each module. Readers are recommended to read [our manuscript published in Journal of Proteome Research](https://pubs.acs.org/doi/10.1021/acs.jproteome.4c00294) first for the overview.
+- [Interpretation](Interpretation.md): Descriptions of all plots and analysis outputs
 - [Normalization](documentation/normalization.md)
 - [Imputation](documentation/imputation.md)
 

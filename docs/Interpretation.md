@@ -36,6 +36,16 @@ The sample coverage plot shows how many features are detected across different n
 
 The density plot overlays the distribution of feature intensities at three stages: original (before filtering), filtered, and after imputation. This allows you to evaluate the effect of filtering and imputation on the overall intensity distribution. A large shift or broadening of the imputed distribution may indicate aggressive imputation.
 
+## Differential Expression Analysis
+
+Differential expression (DE) analysis is performed using [limma](https://bioconductor.org/packages/release/bioc/html/limma.html) with empirical Bayes moderation. Three comparison modes are available under **Advanced Options**:
+
+- **All pairs** (default): Generates one contrast for every pairwise combination of conditions. For example, with conditions A, B, and C, this produces A vs B, A vs C, and B vs C. Use this when you want a complete view of all differences across conditions.
+- **Test vs control**: Compares each non-control condition against a specified control. Enter the name of the control condition in the "Name(s) of control condition" field. For example, with control "WT" and conditions KO1, KO2, this produces KO1 vs WT and KO2 vs WT. Use this for experiments with a clear reference group.
+- **One vs others**: Compares each condition against the average of all remaining conditions combined. For example, with conditions A, B, and C, this produces A vs (B+C), B vs (A+C), and C vs (A+B). Use this to identify features uniquely associated with each condition.
+
+Results for each contrast include log2 fold change, p-value, and adjusted p-value (FDR), and are available in the downloadable results table. The significance thresholds (adjusted p-value cutoff and log2 fold change cutoff) can be configured in Advanced Options.
+
 ## Volcano Plot
 
 ![Volcano Plot](Images/volcano_plot.png)
